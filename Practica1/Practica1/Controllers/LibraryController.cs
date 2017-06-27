@@ -43,6 +43,7 @@ namespace Practica1.Controllers
     tr:nth-child(even) { background-color: #f2f2f2 }
     th { background-color: #4CAF50; color: white; }
 </style>
+<table>
     <tr>   <th>Id</th> <th>Name</th> <th>Author</th>    </tr>
     @foreach (var item in Model)
     {

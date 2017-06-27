@@ -230,7 +230,7 @@ namespace Practica1.Controllers
             if (user != null)
             {
                 var result = await _userManager.ChangePasswordAsync(user, model.OldPassword, model.NewPassword);
-                if (result.Succeeded)
+                if (result.Succeeded) 
                 {
                     await _signInManager.SignInAsync(user, isPersistent: false);
                     _logger.LogInformation(3, "User changed their password successfully.");
